@@ -1,0 +1,13 @@
+{
+  "dag_id": "northwind_daily_warehouse_refresh",
+  "schedule": "0 6 * * *",
+  "timezone": "UTC",
+  "raw_manifest_path": "/opt/airflow/dags/include/raw_manifest.json",
+  "dbt_project_dir": "/opt/airflow/dbt",
+  "dbt_profiles_dir": "/opt/airflow/dbt",
+  "expected_sources": ["raw_customers", "raw_products", "raw_orders"],
+  "max_source_age_hours": 26,
+  "retries": 2,
+  "retry_delay_minutes": 5
+}
+

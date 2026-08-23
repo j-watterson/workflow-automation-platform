@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "northwind-workflow-automation"
+version = "1.0.0"
+description = "Airflow orchestration for Northwind Outfitters analytics workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Jonathon Watterson" }]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
